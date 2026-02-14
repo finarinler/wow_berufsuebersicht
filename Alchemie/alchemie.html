@@ -4,17 +4,70 @@
 <meta charset="UTF-8">
 <title>Alchemie-Übersicht</title>
 <style>
-body {
-text-align: center;
+.rezept-grid {
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+gap: 20px;
+padding: 20px;
 }
-.platzhalter {
-margin-top: 5em;
-font-size: 4em;
+details {
+border: 1px solid #ccc;
+padding: 10px;
+border-radius: 5px;
+background-color: #f9f9f9;
+}
+summary {
+cursor: pointer;
 font-weight: bold;
+padding: 5px;
+}
+iframe {
+width: 100%;
+height: 500px;
+border: none;
+margin-top: 10px;
 }
 </style>
 </head>
 <body>
-<div class="platzhalter">In Arbeit</div>
+<h1>Alchemie Rezeptsammlung</h1>
+
+<div class="rezept-grid">
+
+<details>
+<summary>Rezept: Kessel der Fläschchen der Sin'dorei<br><i>Alchemie von Midnight | Spezialisierung: Fließende Fläschchenkenntnisse (30)</i></summary>
+<iframe src="data/kessel_flask.html"></iframe>
+</details>
+
+<details>
+<summary>Rezept: Kessel des Leerenlichttranks<br><i>Alchemie von Midnight | Spezialisierung: Gekonnte Tränke (30)</i></summary>
+<iframe src="data/kessel_pots.html"></iframe>
+</details>
+
+<details>
+<summary>Rezept: Stabilisiertes Derivat<br><i>Alchemie von Midnight Stufe 1 | Gratis</i></summary>
+<iframe src="data/derivat.html"></iframe>
+</details>
+
+<details>
+<summary>Rezept: Wundersamer Synergist<br><i>Alchemie von Midnight | Spezialisierung: Verwandlungsautorität - Synthesesynergie</i></summary>
+<iframe src="data/synergist.html"></iframe>
+</details>
+
+<details>
+<summary>Rezept: Partikel der wilden Magie<br><i>Alchemie von Midnight Stufe 5 | 125g</i></summary>
+<iframe src="data/partikel.html" width="100%" height="600px" frameborder="0"></iframe>
+</details>
+
+<details>
+<summary>Reagenzien Alchemiebedarf</summary>
+<iframe src="data/reagenzien.html" width="100%" height="600px" frameborder="0"></iframe>
+</details>
+
+<details>
+<summary>Hinweis zur Versteinerten Wurzel</summary>
+<iframe src="data/wurzel.html" alt="Versteinerte Wurzel"></iframe>
+</details>
+
 </body>
 </html>
